@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
+
 
 
 // size_t is it's own data type, it's not a int
@@ -36,6 +38,9 @@ int main(int argc, char* argv[]) {
   // size_t does not overflow since its larger
   size_t _sizet = 2147483648;
   printf("%zu\n", _sizet);
+
+  // SIZE_MAX lets us know how big value we can store on our system
+  printf("%zu\n", SIZE_MAX);
 
   return 0;
 }
